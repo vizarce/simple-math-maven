@@ -10,12 +10,6 @@ pipeline {
     }
 
     stages {
-        stage('Git-Checkout') {
-            steps{
-                echo "Checking out from the Git Repo"
-                git 'https://github.com/vizarce/simple-math-maven.git'
-            }
-        }
         stage('Compile') {
             steps {
                 echo "Compiling application..."
