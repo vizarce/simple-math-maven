@@ -30,13 +30,7 @@ pipeline {
                 echo "Testing VERSION ${NEW_VERSION}"
                 bat "mvn test"
             }
-        }
-        stage('Deploy') {
-            steps {
-                echo "Deploying application..."
-                bat "mvn deploy"
-            }
-        }        
+        }     
     }
     post {
         always {
