@@ -38,6 +38,7 @@ pipeline {
                 allowEmptyResults: true,
                 testResults: '*test-reports/.xml'
             )
+            cleanWs()
         }
     }
 }
